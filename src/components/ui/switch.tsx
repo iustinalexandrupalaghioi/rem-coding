@@ -19,12 +19,7 @@ const Switch = ({
   const Icon = isChecked ? CheckedIcon : UncheckedIcon;
 
   return (
-    <label
-      className={cn(
-        "flex cursor-pointer items-center w-full justify-end",
-        className
-      )}
-    >
+    <label className={cn("cursor-pointer items-center", className)}>
       <div className="relative">
         <input
           type="checkbox"
