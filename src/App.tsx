@@ -17,7 +17,10 @@ function App() {
 
   return (
     <div className="min-h-screen transition-colors duration-150 bg-white text-black dark:bg-gray-900 dark:text-white ">
-      <ThemeSwitch className="py-4 px-2" />
+      <div className="flex justify-end py-4 px-2">
+        <ThemeSwitch />
+      </div>
+
       <div className="container mx-auto flex justify-center px-4 py-8">
         <Stepper currentStep={currentStep} steps={steps} />
       </div>

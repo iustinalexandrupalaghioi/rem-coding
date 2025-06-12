@@ -6,7 +6,7 @@ const DrawerContent = () => {
   const { skip, currentStep, steps, setSkip, setCurrentStep } = useAppContext();
   return (
     <div className="container mx-auto h-full flex justify-between max-w-7xl">
-      <div className="flex items-center gap-4">
+      <div className="flex flex-col md:flex-row justify-center items-center gap-4">
         {skip && (
           <>
             <p className="text-xl">{skip?.size} Yard Skip</p>
@@ -18,7 +18,7 @@ const DrawerContent = () => {
         )}
       </div>
 
-      <div className="flex items-center gap-4">
+      <div className="flex flex-col md:flex-row items-center gap-4">
         <Button
           onClick={() => {
             setSkip(undefined);

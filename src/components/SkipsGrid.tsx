@@ -15,7 +15,7 @@ const SkipsGrid = ({ setDrawerOpen }: SkipsGridProps) => {
     return <ErrorMessage />;
   }
   return (
-    <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 place-items-start">
+    <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 place-items-center md:place-items-start">
       {!data && isLoading && <SkipCardSkeleton />}
       {!isLoading &&
         data &&
